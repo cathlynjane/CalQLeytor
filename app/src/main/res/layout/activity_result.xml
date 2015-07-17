@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,8 +10,46 @@
     tools:context="com.android3project.dev.mycal.ResultActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvFirstNumber"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:gravity="right"
+        android:text="Operand"
+        android:textSize="@dimen/result_text_size" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tvOperator"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Operator"
+        android:textSize="@dimen/result_text_size" />
+
+    <TextView
+        android:id="@+id/tvSecondNumber"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Operand"
+        android:textSize="@dimen/result_text_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="="
+        android:textSize="@dimen/result_text_size" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Result"
+        android:textSize="@dimen/result_text_size" />
+
+
+</GridLayout>

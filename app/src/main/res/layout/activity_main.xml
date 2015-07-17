@@ -45,16 +45,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="+"
-                    android:textSize="40sp" />
+                    android:text="@string/plus"
+                    android:textSize="@dimen/operator_text_size" />
 
                 <Button
                     android:id="@+id/btnMinus"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="-"
-                    android:textSize="40sp" />
+                    android:text="@string/minus"
+                    android:textSize="@dimen/operator_text_size" />
 
             </LinearLayout>
 
@@ -69,16 +69,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="x"
-                    android:textSize="40sp" />
+                    android:text="@string/multiply"
+                    android:textSize="@dimen/operator_text_size" />
 
                 <Button
                     android:id="@+id/btnDivide"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="/"
-                    android:textSize="40sp" />
+                    android:text="@string/divide"
+                    android:textSize="@dimen/operator_text_size" />
 
             </LinearLayout>
         </LinearLayout>
@@ -88,8 +88,8 @@
             android:layout_width="500dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:text="C"
-            android:textSize="30sp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/cancel_text_size"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -97,8 +97,8 @@
     <Button
         android:id="@+id/btnExit"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="EXIT"
-        android:textSize="30sp" />
+        android:layout_height="@dimen/exit_button_height"
+        android:text="@string/exit"
+        android:textSize="@dimen/exit_text_size" />
 
 </GridLayout>
